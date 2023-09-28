@@ -40,6 +40,7 @@ namespace Bloggie.Web
             builder.Services.AddScoped<IBlogPostRepository, BlogPostRepository>();
             //inject for image
             builder.Services.AddScoped<IImageRepositary, CloudianaryImageRepository>();
+            builder.Services.AddScoped<IBlogPostLikeRepository, BlogPostLikeRepository>();
 
             var app = builder.Build();
 
